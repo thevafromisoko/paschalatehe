@@ -1,128 +1,150 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paschal Atehe | Your Digital Edge</title>
-    <meta name="description" content="Paschal Atehe: Social Media Manager, Brand Strategist & Web Designer. Helping non-tech founders & professionals thrive online with confidence.">
-    <meta property="og:title" content="Paschal Atehe | Your Digital Edge">
-    <meta property="og:description" content="Helping non-tech founders & professionals thrive online with clarity and confidence.">
-    <meta property="og:image" content="your-thumbnail.jpg">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fefefe; color: #1c1c1c; line-height: 1.6; }
-        header { background: linear-gradient(to right, #000000, #333333); color: #ffd700; padding: 80px 20px; text-align: center; }
-        header h1 { font-size: 3rem; margin-bottom: 10px; }
-        header p { font-size: 1.2rem; }
-        section { max-width: 1100px; margin: auto; padding: 60px 20px; }
-        h2 { font-size: 2rem; color: #000; border-left: 6px solid #ffd700; padding-left: 15px; margin-bottom: 25px; }
-        .services ul, .portfolio-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; list-style: none; }
-        .services li, .portfolio-item { background: #f4f4f4; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.05); }
-        .portfolio-item a { color: #000; font-weight: bold; }
-        .testimonials blockquote { font-style: italic; background: #fffbe6; padding: 15px 20px; border-left: 5px solid #ffd700; margin-bottom: 20px; border-radius: 8px; }
-        .contact a { display: inline-block; margin: 10px 0; color: #000; font-weight: bold; text-decoration: none; }
-        .contact i { margin-right: 8px; }
-        .packages, .case-studies, .lead-form { background: #fdfdfd; padding: 60px 20px; margin: auto; max-width: 1100px; }
-        .packages .tier, .case-study, .lead-form form { background: #ffffff; border: 2px solid #ddd; border-left: 5px solid #ffd700; padding: 25px; border-radius: 10px; margin-bottom: 30px; transition: transform 0.2s ease; }
-        .packages .tier:hover { transform: scale(1.02); }
-        .lead-form form input, .lead-form form textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 6px; }
-        .lead-form form button { background-color: #000; color: #ffd700; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; margin-top: 10px; }
-        footer { background-color: #111; color: #ddd; text-align: center; padding: 20px; font-size: 0.9rem; }
-        @media (max-width: 768px) { header h1 { font-size: 2.2rem; } h2 { font-size: 1.5rem; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paschal Atehe | Your Digital Edge</title>
+  <meta name="description" content="Digital Consultant for non-tech founders. Portfolio, testimonials, service packages, and blog."/>
+  <meta property="og:title" content="Paschal Atehe | Digital Consultant"/>
+  <meta property="og:description" content="Helping non-tech founders thrive online with confidence."/>
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Paschal Atehe | Your Digital Edge"/>
+  <meta name="twitter:description" content="Helping non-tech founders build digital confidence."/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fff; color: #111; }
+    nav { position: sticky; top: 0; background: #000; color: #ffd700; padding: 1rem; text-align: center; z-index: 1000; }
+    nav a { color: #ffd700; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    header { text-align: center; padding: 100px 20px; background: linear-gradient(to right, #000, #333); color: #ffd700; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    h2 { border-left: 5px solid #ffd700; padding-left: 15px; margin-bottom: 20px; }
+    .cta { position: fixed; bottom: 20px; right: 20px; background: #ffd700; color: #000; padding: 12px 18px; border-radius: 30px; text-decoration: none; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+    .portfolio-item, .service, .testimonial, .package { background: #f9f9f9; padding: 20px; margin-bottom: 20px; border-left: 4px solid #ffd700; border-radius: 10px; transition: transform 0.3s; }
+    .portfolio-item:hover { transform: scale(1.02); }
+    form input, form textarea { width: 100%; margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #000; color: #ffd700; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
 </head>
-<body><header>
+<body>
+
+      <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
     <h1>Paschal Atehe</h1>
-    <p>Digital Consultant | Strategy Boss | Web Magician for Founders</p>
-    <p><em>Heaven-sent to turn your digital confusion into conversion.</em></p>
-</header><section>
+    <p>Helping non-tech founders thrive online with clarity and confidence</p>
+  </header>
+
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I'm Paschal Atehe, a confident digital professional with a decade of experience empowering non-tech founders, professionals, and business owners. My mission is to simplify the digital maze, deliver premium strategies, and help you show up online like a seasoned pro—without needing to be one.</p>
-</section><section class="services">
-    <h2>How I Can Help</h2>
-    <ul>
-        <li>Social Media Strategy & 24/7 Brand Presence</li>
-        <li>Conversion-focused Website Design & Sales Funnels</li>
-        <li>Bold Content Creation & Brand Identity</li>
-        <li>Meta & Google Ads Campaigns That Actually Work</li>
-    </ul>
-</section><section class="portfolio">
-    <h2>Portfolio Highlights</h2>
-    <div class="portfolio-list">
-        <div class="portfolio-item"><a href="http://www.panicrete.com" target="_blank">Panicrete</a><p>Industrial flooring made classy online.</p></div>
-        <div class="portfolio-item"><a href="http://www.frangipanigroup.com" target="_blank">Frangipani Group</a><p>Corporate design and web presence upgrade.</p></div>
-        <div class="portfolio-item"><a href="http://www.phaevysbeautylounge.com.ng" target="_blank">Phaevy's Beauty Lounge</a><p>Luxury beauty brand, digitally styled.</p></div>
-        <div class="portfolio-item"><a href="http://bit.ly/usamaids" target="_blank">USA Maids</a><p>Recruitment landing page with edge.</p></div>
-    </div>
-</section><section class="testimonials">
-    <h2>What Clients Say</h2>
-    <blockquote>"Paschal transformed our online identity. We now stand out and show up with confidence." – <strong>Ify Michaels</strong></blockquote>
-    <blockquote>"He’s not just skilled—he listens, aligns, and delivers!" – <strong>Favour Adukanya</strong></blockquote>
-</section><section class="packages">
+    <p>With over 10 years of experience, I simplify digital transformation for non-tech founders, solopreneurs, and professionals. My focus is building clarity, confidence, and real results online—without the overwhelm.</p>
+  </section>
+
+  <section id="services" data-aos="fade-up">
+    <h2>Services</h2>
+    <div class="service">💡 Strategy & Digital Confidence Coaching</div>
+    <div class="service">🎯 High-Converting Website Design</div>
+    <div class="service">📣 Bold Social Media Content & Campaigns</div>
+    <div class="service">📈 Paid Ads (Meta, Google)</div>
+  </section>
+
+
+  <section id="portfolio" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item"><strong>Panicrete</strong> — Industrial site, redesigned for conversions</div>
+    <div class="portfolio-item"><strong>Frangipani Group</strong> — Corporate identity & site funnel</div>
+    <div class="portfolio-item"><strong>Phaevy’s Beauty Lounge</strong> — Luxury digital touch for beauty brand</div>
+    <div class="portfolio-item"><strong>USA Maids</strong> — Landing page that converts browsers to bookings</div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <div class="testimonial">⭐ “Paschal turned our brand around — we're finally confident showing up.”</div>
+    <div class="testimonial">⭐ “He listens, aligns, and delivers. Not just skilled—he’s strategic.”</div>
+  </section>
+
+  <section data-aos="fade-up">
     <h2>Service Packages</h2>
-    <div class="tier">
-        <h3>Starter Package</h3>
-        <p>Perfect for personal brands and solopreneurs.</p>
-        <ul>
-            <li>Basic website (up to 5 pages)</li>
-            <li>1 month of social media content</li>
-            <li>Initial brand audit</li>
-        </ul>
+    <div class="package">
+      <strong>🌱 Starter</strong> — Ideal for personal brands  
+      <ul>
+        <li>Simple website (5 pages max)</li>
+        <li>Brand audit + social starter kit</li>
+        <li>Email setup and CTA strategy</li>
+      </ul>
     </div>
-    <div class="tier">
-        <h3>Pro Growth Package</h3>
-        <p>Designed for serious small businesses and startups.</p>
-        <ul>
-            <li>Website with funnel design</li>
-            <li>Ad campaign setup (Meta or Google)</li>
-            <li>Content strategy guide</li>
-        </ul>
+    <div class="package">
+      <strong>🚀 Pro Growth</strong> — For business owners  
+      <ul>
+        <li>Conversion-optimized website</li>
+        <li>1 ad campaign + custom strategy doc</li>
+        <li>Lead magnet design + email setup</li>
+      </ul>
     </div>
-    <div class="tier">
-        <h3>Elite Scale Package</h3>
-        <p>For visionaries ready to dominate their niche.</p>
-        <ul>
-            <li>Full brand suite (logo, voice, visuals)</li>
-            <li>Advanced funnel + automation</li>
-            <li>Strategy call + ongoing support</li>
-        </ul>
+    <div class="package">
+      <strong>👑 Elite Scale</strong> — Full-stack digital branding  
+      <ul>
+        <li>Brand identity + funnel + CRM setup</li>
+        <li>3-month campaign strategy & execution</li>
+        <li>1:1 coaching + optimization support</li>
+      </ul>
     </div>
-</section><section class="case-studies">
-    <h2>Client Success Stories</h2>
-    <div class="case-study">
-        <h3>Frangipani Group</h3>
-        <p><strong>Challenge:</strong> Outdated web presence and no lead capture system.</p>
-        <p><strong>Solution:</strong> Redesigned their site, added a conversion funnel, and set up Google Ads.</p>
-        <p><strong>Result:</strong> 3x more inquiries within 60 days.</p>
-    </div>
-    <div class="case-study">
-        <h3>Panicrete</h3>
-        <p><strong>Challenge:</strong> Low credibility and poor mobile experience.</p>
-        <p><strong>Solution:</strong> Delivered a modern, responsive site with sharp branding.</p>
-        <p><strong>Result:</strong> They landed a major construction deal via the website in month one.</p>
-    </div>
-</section><section class="lead-form">
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Case Studies</h2>
+    <div class="package"><strong>Panicrete:</strong> From zero leads to a construction deal in 30 days after redesign + Google Ads.</div>
+    <div class="package"><strong>Frangipani:</strong> 3X lead increase via a funnel and content strategy shift.</div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
     <h2>Start Your Project</h2>
-    <form action="mailto:ateheopaschal@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-        <button type="submit">Send Inquiry</button>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      <button type="submit">Send Inquiry</button>
     </form>
-</section><section class="contact">
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Blog Teaser</h2>
+    <p><strong>Coming Soon:</strong> “How I Helped Panicrete 3X Their Leads in 60 Days”</p>
+    <p>Sign up to be the first to read it.</p>
+  </section>
+
+  <section data-aos="fade-up">
     <h2>Let’s Connect</h2>
     <p><i class="fas fa-envelope"></i> <a href="mailto:ateheopaschal@gmail.com">ateheopaschal@gmail.com</a></p>
-    <p><i class="fas fa-calendar-alt"></i> <a href="https://calendly.com/thevafrom_isoko/15-minute-meeting-clone" target="_blank">Book a 15-minute Consultation</a></p>
+    <p><i class="fas fa-calendar-alt"></i> <a href="https://calendly.com/thevafrom_isoko/15-minute-meeting-clone" target="_blank">Book a Consultation</a></p>
     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/themanfromisoko" target="_blank">LinkedIn Profile</a></p>
-</section><footer>
-    &copy; 2025 Paschal Atehe. Empowering Digital Success. Stripe | PayPal | Wise Accepted.
-</footer></body>
+  </section>
+
+  <a class="cta" href="https://calendly.com/thevafrom_isoko/15-minute-meeting-clone" target="_blank">📅 Book a Call</a>
+
+  <footer>
+    <p>&copy; 2025 Paschal Atehe. Empowering Digital Confidence.</p>
+    <p>Payments accepted: Stripe | PayPal | Wise</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
+
